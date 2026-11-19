@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        .container{
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+        }
+        .img img{
+            width: 90%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+        .btn{
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .btn .yes{
+            background-color: rgb(139, 127, 31);
+            color: rgb(28, 28, 29);
+            padding: 10px 60px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn .no{
+            background-color: green;
+            color: rgb(0, 187, 255);
+            padding: 10px 60px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        p{
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        @media (max-width: 480px){
+            .container{
+                padding: 15px;
+            }
+            .btn{
+                gap: 15px;
+                padding: 15px 0;
+            }
+            .btn .yes, .btn .no{
+                padding: 10px 30px;
+                font-size: 16px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+
+        /* ======================style form ========================== */
+        .login-container{
+           display: none;
+           flex-direction: column;
+           align-items: center;
+           background-color: rgb(90, 90, 198);
+           padding: 30px 60px;
+           border-radius: 12px;
+           box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+           width: 320px;
+       }
+       /* .title{
+          text-align: center;
+          padding-bottom: 20px;
+          color: white;
+          margin: 0;
+       } */
+/* label{
+    color: white;
+    align-self: flex-start;
+    margin-bottom: 4px;
+    font-size: 14px;
+} */
+input{
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+/* .sumit-btn{
+    padding: 10px;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: rgb(90, 90, 198);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+} */
+/* .sumit-btn:hover{
+    background-color: rgb(40, 40, 97);
+} */
+    </style>
+    <div class="container">
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0KpO1LyfnhmNgqFFJ7EIPtXVw98NKrvICo2-zgVRuqvH2p-vjEVrmHbD&s=10" alt="love alone">
+        </div>
+        <div>
+            <p>Do you love me??</p>
+        </div>
+        <div class="btn">
+            <button class="yes">yes</button>
+            <button class="no">No</button>
+        </div>
+        <!-- <section class="login-container">
+           
+            <form action="#">
+                <h4 class="title">💖Login💖</h4>
+                <label class="user-name" for="Username">Username:</label>
+                <input class="input-user" type="text" name="ctr-name" id="Username" placeholder="Username..." required><br><br>
+                <label class="full-name" for="Fullname">Full Name:</label>
+                <input class="input-full" type="text" name="ctr-name" id="Fullname" placeholder="fullName..." required>
+                  <button class="sumit-btn" type="submit">sumit</button>
+            </form>
+          
+        </section> -->
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
